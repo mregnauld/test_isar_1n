@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage>
       ..label = "My group"
       ..tags.add(Tag()..label = "My tag");
     print("tags : ${group.tags.length}");
-    // _groupsDAO.addOrUpdate(group);
+    _groupsDAO.addOrUpdate(group);
   }
 
   @override
