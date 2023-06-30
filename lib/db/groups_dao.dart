@@ -22,7 +22,7 @@ class GroupsDAO
     await isar.writeTxn(() async {
       await isar.tags.putAll(group.tags.toList());
       await isar.groups.put(group);
-      // await group.tags.save();
+      await group.tags.save();
     });
   }
 
